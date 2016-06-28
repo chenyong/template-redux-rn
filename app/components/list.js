@@ -11,7 +11,10 @@ export default class List extends React.Component {
   render() {
     return (
       <View>
-        <Text style={style.header}>{'list'}</Text>
+        <Text style={style.header}>{'data: '}{this.props.data}</Text>
+        <TouchableHighlight onPress={()=> this.props.incList()}>
+          <Text style={style.buttonText}>{'INC'}</Text>
+        </TouchableHighlight>
         <TouchableHighlight onPress={Actions.detail}>
           <Text style={style.buttonText}>{'gotoDetail'}</Text>
         </TouchableHighlight>

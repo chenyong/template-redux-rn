@@ -11,7 +11,10 @@ export default class Detail extends React.Component {
   render() {
     return (
       <View>
-        <Text style={style.header}>{'detail'}</Text>
+        <Text style={style.header}>{'detail data:'}{this.props.data}</Text>
+        <TouchableHighlight onPress={() => this.props.incDetail()}>
+          <Text style={style.buttonText}>{'INC'}</Text>
+        </TouchableHighlight>
         <TouchableHighlight onPress={Actions.pop}>
           <Text style={style.buttonText}>{'gotoList'}</Text>
         </TouchableHighlight>

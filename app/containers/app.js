@@ -1,8 +1,8 @@
 
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import List from '../components/list';
-import Detail from '../components/detail';
+import List from '../containers/list';
+import Detail from '../containers/detail';
 import {Router, Scene} from 'react-native-router-flux';
 
 export default class App extends React.Component {
