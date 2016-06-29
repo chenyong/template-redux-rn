@@ -9,9 +9,16 @@ Well, here's a basic demo of React Native(iOS), with:
 
 ### Usage
 
+假设项目名是 `yourDemo`:
+
 ```bash
-git clone "this repo" # download code
-react-native init yourDemo # init you project
-cp -r template-redux-rn/app template-redux-rn/index.ios.js yourDemo/ # copy
-cd yourDemo; react-native run-ios # load code
+git clone git@github.com:ElemeFE/template-redux-rn.git
+react-native init yourDemo
+cp -r template-redux-rn/app template-redux-rn/index.*.js yourDemo/
+cd yourDemo
+perl -pi -e 's/templateReduxRN/yourDemo/g' index.*.js
+npm i --save react-native-router-flux redux react-redux
+react-native run-ios
 ```
+
+### Trouble Shoot
